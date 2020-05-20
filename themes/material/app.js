@@ -280,8 +280,6 @@ function file_video(path){
 	  <ul class="mdui-menu" id="external-player">`;
 	if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
 		playBtn += `
-		<li class="mdui-menu-item"><a href="intent:${url}#Intent;package=com.mxtech.videoplayer.ad;S.title=${path};end" class="mdui-ripple">MX Player</a></li>
-		<li class="mdui-menu-item"><a href="intent:${url}#Intent;package=com.mxtech.videoplayer.pro;S.title=${path};end" class="mdui-ripple">MX Player Pro</a></li>
 		<li class="mdui-menu-item"><a href="vlc://${url}" class="mdui-ripple">VLC</a></li>`;
 	}else{
 		playBtn += `
